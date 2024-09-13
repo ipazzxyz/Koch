@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.30)
+project(Koch)
+set (CMAKE_CXX_STANDARD 23)
+find_package(SFML 2.6 COMPONENTS graphics REQUIRED)
+add_executable(Koch src/main.cpp src/app.cpp src/app.hpp)
+target_link_libraries(Koch sfml-graphics)
